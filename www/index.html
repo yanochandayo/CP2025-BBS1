@@ -89,6 +89,7 @@ function createPost(author, content) {
     console.log('ボタンが押されました')
     // この上の行を消して投稿処理を記述
     // 行末に 「;」 を付けないこと
+    postsRef.push(postData)
     .then(() => {
         showMessage('投稿が完了しました！');
         $('#authorInput').val('');
